@@ -1,0 +1,5 @@
+# **GEOLOCALIZAÇÃO NA LINGUAGEM R**  
+Se encontra uma versão de se trabalhar com os dados geoespaciais com as bibliotecas sp junto com o rgdal (que em breve será substituído) e geojsonio, voltado aos arquivos GeoJSON. Foi a minha primeira experiência em relação a utilização de conceitos geoespacias que me permitiu desenvolver posteriomente em Python. No R é bem mais
+rápido comparado ao Python, entretanto pelos testes feitos exaustivamente há um problema que não consegue geolocalizar dados pequenos e ocorre o falso negativo (localizar uma coordenada como fora de
+toda área presente no arquivo GeoJSON presente sendo dentro na verdade). O arquivo [Geolocalizacao.R](https://github.com/guilhermehencus/Geolocalizacao_R/blob/master/Geolocalizacao.R) é o original e [Big_Query_R_Conexao_Geolocalizacao.R](https://github.com/guilhermehencus/Geolocalizacao_R/blob/master/Big_Query_R_Conexao_Geolocalizacao.R) se fez uma integração com
+o Big Query da Google para a manipulação dos dados do Waze, especificamente no projeto [Waze for City](https://www.waze.com/pt-BR/wazeforcities/).
